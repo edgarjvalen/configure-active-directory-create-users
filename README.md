@@ -1,7 +1,7 @@
 # install-active-directory-create-users
 
 <p align="center">
-<img src="https://i.imgur.com/Q3YpjDD.png" height="30%" width="30%"alt="AD Logo"/>
+<img src="https://i.imgur.com/Q3YpjDD.png" height="40%" width="40%"alt="AD Logo"/>
 </p>
 
 <h1>Installing Active Directory and Creating Users</h1>
@@ -39,7 +39,7 @@ Now for the image use Windows Server 2022. It is recommended for the size to use
 
 Give the admin log in credentials that can be remembered or just write them down in notepad. Now, click "Next" until reaching the "Networking" tab. Take note of the "Virtual Network" created. This will be important when creating the Client VM. Check the box under Licensing then "Review and create" the VM.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/4d0af242-ce65-4bee-bd48-03a050c4bc4b)
+<img src="https://i.imgur.com/NxXFK16.png" height="60%" width="60%" alt="9"/><br />
 
 Now, create the Client VM. Same thing as the first one except the image should be using Windows 10.
 
