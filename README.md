@@ -1,7 +1,7 @@
 # install-active-directory-create-users
 
 <p align="center">
-<img src="https://i.imgur.com/Q3YpjDD.png" alt="AD Logo"/>
+<img src="https://i.imgur.com/Q3YpjDD.png" height="30%" width="30%"alt="AD Logo"/>
 </p>
 
 <h1>Installing Active Directory and Creating Users</h1>
@@ -31,11 +31,11 @@ https://github.com/jarrettm98/azure-compute-and-networking
 
 First, using Azure, create a Resource Group. Now, create 2 Virtual Machines(VMs). One will be the Domain Controller and the other will be the Client. To create the Domain Controller, give the VM a name as well as assign it to the Resource Group created before. 
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/2cdc4c13-ab7e-470c-aeaa-c6fce4f297ad)
+<img src="https://i.imgur.com/uYfHMQG.png" height="50%" width="50%" alt="9"/><br />
 
 Now for the image use Windows Server 2022. It is recommended for the size to use 2 vcpus.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/42ee1038-9ce5-4cb4-aa3d-cfff71f442fa)
+<img src="https://i.imgur.com/FNoA7m0.png" height="50%" width="50%" alt="9"/><br />
 
 Give the admin log in credentials that can be remembered or just write them down in notepad. Now, click "Next" until reaching the "Networking" tab. Take note of the "Virtual Network" created. This will be important when creating the Client VM. Check the box under Licensing then "Review and create" the VM.
 
@@ -43,17 +43,17 @@ Give the admin log in credentials that can be remembered or just write them down
 
 Now, create the Client VM. Same thing as the first one except the image should be using Windows 10.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/7a5a22a1-2b5e-4565-a37e-91a20d3da805)
+<img src="https://i.imgur.com/2PvUCJN.png" height="50%" width="50%" alt="9"/><br />
 
 Click, Next until reaching the Networking tab. Make sure the Virtual Network is the same as the Domain Controller. Now Review and create.
 
 Now it's time to set the Domain Controller's NIC Private IP to static. Go to the Domain Controller and click on the "Networking" tab. Next, click on the "Network Interface."
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/692c8cfc-8161-4f4c-a288-e0c3624ebde4)
+<img src="https://i.imgur.com/6W2WZTA.png" height="50%" width="50%" alt="9"/><br />
 
 Now, go the "IP configurations" tab and click on the IP configuration. 
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/c8f86905-0a5c-4de4-8c40-b449880b7643)
+<img src="https://i.imgur.com/0R53K7r.png" height="50%" width="50%" alt="9"/><br />
 
 Now, change the Allocation from "Dynamic" to "Static." Then click Save.
 
