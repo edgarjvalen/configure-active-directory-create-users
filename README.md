@@ -131,11 +131,12 @@ In the "_EMPLOYEES" tab, create a new "User"
 Name this anything. Just remember the user and password. Uncheck the box that is next to "User must change password at next logon." This wont be necessary. Click next then click Finish.
 
 <img src="https://i.imgur.com/VIJLhXf.png" height="50%" width="50%" alt="9"/><br />
-<img src="https://i.imgur.com/slz2BBbf.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/slz2BBb.png" height="50%" width="50%" alt="9"/><br />
+
 
 Now add this user to the "Domain Admins" security group. Right-click on the user create, then click "Properties." Click on the "Members of" tab, then click "Add." 
 
-<img src="https://i.imgur.com/3MooGCr.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/3MooGCr.png" height="50%" width="50%" alt="9"/><br />
 
 Type "domain" in the box under "Enter the object names to select:" then click "Check Names" 
 
