@@ -130,8 +130,8 @@ In the "_EMPLOYEES" tab, create a new "User"
 
 Name this anything. Just remember the user and password. Uncheck the box that is next to "User must change password at next logon." This wont be necessary. Click next then click Finish.
 
-<img src="https://i.imgur.com/VIJLhXf.png" height="80%" width="80%" alt="9"/><br />
-<img src="https://i.imgur.com/slz2BBbf.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/VIJLhXf.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/slz2BBbf.png" height="50%" width="50%" alt="9"/><br />
 
 Now add this user to the "Domain Admins" security group. Right-click on the user create, then click "Properties." Click on the "Members of" tab, then click "Add." 
 
@@ -147,7 +147,7 @@ Choose the "Domain Admins" option then click OK
 
 Now, click "Apply." The user has successfully been added to the Domain Admins security group. Click OK. Now logout of the Domain controller and re-log as the user just created.
 
-<img src="https://i.imgur.com/oECi1Rd.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/oECi1Rd.png" height="50%" width="50%" alt="9"/><br />
 
 <h2>Step 4: Setting Client DNS Settings to Domain Controller Private IP Address</h2>
 
