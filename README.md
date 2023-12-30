@@ -61,7 +61,7 @@ Now, change the Allocation from "Dynamic" to "Static." Then click Save.
 
 Now, using the user and password created before, login to the Client with it's IP address in Remote Desktop Connection. 
 
-<img src="https://i.imgur.com/28TrmKg.png" height="35%" width="35%" alt="9"/><br />
+<img src="https://i.imgur.com/28TrmKg.png" height="45%" width="45%" alt="9"/><br />
 
 Now, using Command Prompt, ping the Domain Controller with it's Private IP Address. Type in "ping (Your DC Private IP) -t" to perpetually ping. For now it will time out.
 
@@ -69,11 +69,11 @@ Now, using Command Prompt, ping the Domain Controller with it's Private IP Addre
 
 Next its time to enable ICMPv4. First, login to the Domain Controller VM then open "Windows Defender Firewall with Advanced Security" 
 
-<img src="https://i.imgur.com/bYkAEwk.png" height="75%" width="75%" alt="9"/><br />
+<img src="https://i.imgur.com/bYkAEwk.png" height="85%" width="85%" alt="9"/><br />
 
 Click on "Inbound Rules" and Sort by "Protocol". Look for the rules with "Core Networking Diagnostics - ICMP Echo Request(ICMPv4-In)" There will be two of them (Both on the bottom of the image below)
 
-<img src="https://i.imgur.com/dmGfcyH.png" height="75%" width="75%" alt="9"/><br />
+<img src="https://i.imgur.com/dmGfcyH.png" height="85%" width="85%" alt="9"/><br />
 
 Right-click and Enable both rules. Now go back to the Client VM and check on the command prompt. It should now be properly pinging the Domain Controller.
 
