@@ -31,11 +31,11 @@ https://github.com/jarrettm98/azure-compute-and-networking
 
 First, using Azure, create a Resource Group. Now, create 2 Virtual Machines(VMs). One will be the Domain Controller and the other will be the Client. To create the Domain Controller, give the VM a name as well as assign it to the Resource Group created before. 
 
-<img src="https://i.imgur.com/uYfHMQG.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/uYfHMQG.png" height="70%" width="70%" alt="9"/><br />
 
 Now for the image use Windows Server 2022. It is recommended for the size to use 2 vcpus.
 
-<img src="https://i.imgur.com/FNoA7m0.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/FNoA7m0.png" height="70%" width="70%" alt="9"/><br />
 
 Give the admin log in credentials that can be remembered or just write them down in notepad. Now, click "Next" until reaching the "Networking" tab. Take note of the "Virtual Network" created. This will be important when creating the Client VM. Check the box under Licensing then "Review and create" the VM.
 
@@ -43,7 +43,7 @@ Give the admin log in credentials that can be remembered or just write them down
 
 Now, create the Client VM. Same thing as the first one except the image should be using Windows 10.
 
-<img src="https://i.imgur.com/2PvUCJN.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/2PvUCJN.png" height="70%" width="70%" alt="9"/><br />
 
 Click, Next until reaching the Networking tab. Make sure the Virtual Network is the same as the Domain Controller. Now Review and create.
 
