@@ -77,6 +77,8 @@ Click on "Inbound Rules" and Sort by "Protocol". Look for the rules with "Core N
 
 Right-click and Enable both rules. Now go back to the Client VM and check on the command prompt. It should now be properly pinging the Domain Controller.
 
+<img src="https://i.imgur.com/ENb2KyF.png" height="50%" width="50%" alt="9"/><br />
+
 ![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/ccd209de-9c2a-4eeb-a5d8-0b2addd974e2)
 
 
@@ -118,7 +120,7 @@ Once logged in, using Server Manager click on tools in the top-right corner. Nex
 
 In the Domain container, create a new "Organizational Unit"
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/1be88741-a3df-40d2-81ca-53c2ae0bb518)
+<img src="https://i.imgur.com/9DGmBMS.png" height="80%" width="80%" alt="9"/><br />
 
 Name the OU "_EMPLOYEES", then click OK. Next create another OU and name it "_ADMINS."
 
@@ -128,11 +130,12 @@ In the "_EMPLOYEES" tab, create a new "User"
 
 Name this anything. Just remember the user and password. Uncheck the box that is next to "User must change password at next logon." This wont be necessary. Click next then click Finish.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/d51330f5-b341-4752-91ab-c628bf23ee17)
+<img src="https://i.imgur.com/VIJLhXf.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/slz2BBbf.png" height="80%" width="80%" alt="9"/><br />
 
 Now add this user to the "Domain Admins" security group. Right-click on the user create, then click "Properties." Click on the "Members of" tab, then click "Add." 
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/ac8dbe4c-346a-4799-9d1a-f8cafae0f917)
+<img src="https://i.imgur.com/3MooGCr.png" height="80%" width="80%" alt="9"/><br />
 
 Type "domain" in the box under "Enter the object names to select:" then click "Check Names" 
 
@@ -140,11 +143,11 @@ Type "domain" in the box under "Enter the object names to select:" then click "C
 
 Choose the "Domain Admins" option then click OK
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/bb26d8e2-d21b-4486-9211-b9374e3ec8c5)
+<img src="https://i.imgur.com/eHOKSWT.png" height="80%" width="80%" alt="9"/><br />
 
 Now, click "Apply." The user has successfully been added to the Domain Admins security group. Click OK. Now logout of the Domain controller and re-log as the user just created.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/e35b42d0-cc6c-402f-946b-08b49fefaa1e)
+<img src="https://i.imgur.com/oECi1Rd.png" height="80%" width="80%" alt="9"/><br />
 
 <h2>Step 4: Setting Client DNS Settings to Domain Controller Private IP Address</h2>
 
