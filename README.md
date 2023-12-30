@@ -53,15 +53,15 @@ Now it's time to set the Domain Controller's NIC Private IP to static. Go to the
 
 Now, go the "IP configurations" tab and click on the IP configuration. 
 
-<img src="https://i.imgur.com/0R53K7r.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/0R53K7r.png" height="40%" width="40%" alt="9"/><br />
 
 Now, change the Allocation from "Dynamic" to "Static." Then click Save.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/ec5ef55f-c26e-47c7-86de-ca07eb7d260d)
+<img src="https://i.imgur.com/JAGBZtk.png" height="40%" width="40%" alt="9"/><br />
 
 Now, using the user and password created before, login to the Client with it's IP address in Remote Desktop Connection. 
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/952e6c9e-6079-46bb-994c-469b36da2ecb)
+<img src="https://i.imgur.com/28TrmKg.png" height="35%" width="35%" alt="9"/><br />
 
 Now, using Command Prompt, ping the Domain Controller with it's Private IP Address. Type in "ping (Your DC Private IP) -t" to perpetually ping. For now it will time out.
 
@@ -69,11 +69,11 @@ Now, using Command Prompt, ping the Domain Controller with it's Private IP Addre
 
 Next its time to enable ICMPv4. First, login to the Domain Controller VM then open "Windows Defender Firewall with Advanced Security" 
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/7918fdd6-808a-424f-a718-00fbcff72be6)
+<img src="https://i.imgur.com/bYkAEwk.png" height="75%" width="75%" alt="9"/><br />
 
 Click on "Inbound Rules" and Sort by "Protocol". Look for the rules with "Core Networking Diagnostics - ICMP Echo Request(ICMPv4-In)" There will be two of them (Both on the bottom of the image below)
 
-![icmpv4 rules](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/d9080231-46b1-442c-872e-a8fff345bea0)
+<img src="https://i.imgur.com/dmGfcyH.png" height="75%" width="75%" alt="9"/><br />
 
 Right-click and Enable both rules. Now go back to the Client VM and check on the command prompt. It should now be properly pinging the Domain Controller.
 
