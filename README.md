@@ -84,31 +84,31 @@ Right-click and Enable both rules. Now go back to the Client VM and check on the
 
 Now time to Install Active Directory. Go to the Domain Controller. In "Server Manager" click on "Add roles and features."
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/fbc991e3-3855-447b-aaa8-70d18c93ad21)
+<img src="https://i.imgur.com/0BcdJpW.png" height="80%" width="80%" alt="9"/><br />
 
 Click "Next" until reaching the "Server Roles" section. Now, check the box next to "Active Directory Domain Services" then "Add Features."
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/d90f9137-1393-4cc4-a9d4-7bd6e32869a2)
+<img src="https://i.imgur.com/K5oTmkD.png" height="80%" width="80%" alt="9"/><br />
 
 Click Next until reaching the "Confirmation" tab then click "Install." It may take a while to install. Once it says "Configuration required. Installation succeeded on (Your DC name here). Click "Close"
 
 Towards the top-right corner of the Server Manager window, there will be a flag and a yellow triangle with a "!" symbol. Click on that then "Promote the server to a domain controller"
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/488877a6-b734-4f24-9930-9cfc3ae58931)
+<img src="https://i.imgur.com/D8p1wU9.png" height="40%" width="40%" alt="9"/><br />
 
 A window will pop up for a Configuration Wizard. Check the bubble next to "Add a new forest" then give it a domain (Example in image below) Click next.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/e25321f9-3964-4a51-a147-dc505db66db9)
+<img src="https://i.imgur.com/BefHqfW.png" height="80%" width="80%" alt="9"/><br />
 
 Give it a DSRM password (Required but wont be used in this tutorial) Click next.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/f89f6021-2ccc-4253-be0a-dfbc1b857743)
+<img src="https://i.imgur.com/TYXfTrJ.png" height="80%" width="80%" alt="9"/><br />
 
 Next, the NETBIOS domain will be made. This may take a moment. Once it is made, Click next until reaching the "Prerequisites Check" tab. This process will take a moment. Now click "Install"
 
 After Installing the VM will reboot. Once it is rebooted, Log back into the Domain Controller with the domain name and the username. Example below.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/5e8736c2-dda9-4ec4-8bfc-a954bc34cce9)
+<img src="https://i.imgur.com/nT5uFiT.png" height="40%" width="40%" alt="9"/><br />
 
 <h2>Step 3: Creating a Domain Admin</h2>
 
