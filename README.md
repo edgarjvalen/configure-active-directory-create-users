@@ -225,7 +225,7 @@ Go to Server Manager>Tools>Active Directory Users and Computers. Under the "_EMP
 
 These names are all randomly generated. Choose one and log into the Client VM with the username it is assigned. (Remember the password is "Password1)
 
-<img src="https://i.imgur.com/LoWC3Er.png" height="60%" width="60%" alt="9"/><br />
+<img src="https://i.imgur.com/LoWC3Er.png" height="50%" width="50%" alt="9"/><br />
 
 Congrats! You completed this tutorial!
 
