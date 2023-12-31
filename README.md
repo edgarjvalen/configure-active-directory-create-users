@@ -154,37 +154,35 @@ Now, click "Apply." The user has successfully been added to the Domain Admins se
 
 First, on Azure go to the Client VM. Next, go to the Networking tab and click on the Network Interface.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/b3b0df1b-dea6-488c-9ed5-b799fea5cb1f)
+<img src="https://i.imgur.com/0jFQlMM.png" height="60%" width="60%" alt="9"/><br />
 
 Next, go to the "DNS Servers tab and create a custom DNS Server. Add a custom server using the Domain Controller's Private IP address. Example Below.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/a3ea6e36-b4f5-4d53-876d-972bb532a6d8)
+<img src="https://i.imgur.com/DK1mOBp.png" height="60%" width="60%" alt="9"/><br />
 
 Now click "Save" Next go back to the Client and click "Restart in the "Overview" tab 
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/e6b59225-f50e-4d47-b972-d1d5837ec222)
+<img src="https://i.imgur.com/Cq7d1PZ.png" height="80%" width="80%" alt="9"/><br />
 
 Once the Client is restarted, login to the client with Remote Desktop as the original admin created with the VM.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/041739ae-3f18-4529-b78a-0c536d63e4ce)
+<img src="https://i.imgur.com/LkqUK6Q.png" height="80%" width="80%" alt="9"/><br />
+<h1>MISSING IMAGE</h1>
 
 Once logged in go to Settings>System>About and click on "Rename this PC(advanced)"
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/2b814352-f7aa-4f26-9aae-e0920e321f1b)
+<img src="https://i.imgur.com/1tu4Kwj.png" height="80%" width="80%" alt="9"/><br />
 
 Now Click on "Change..."
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/0927adfe-69e8-4183-bdd3-48d547948f47)
+<img src="https://i.imgur.com/zKDbFIs.png" height="80%" width="80%" alt="9"/><br />
 
-Now check the bubble next to "Domain" then type in the domain name (Your own domain name)
+Now check the bubble next to "Domain" then type in the domain name (Your own domain name). There should be window that pops up for a login. Use the admin previously created to login. Example below:
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/ca0ee0d4-a1ec-4b76-9a5b-1dbbd1d2d634)
+<img src="https://i.imgur.com/nT3wd3q.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/oVmTUG5.png" height="80%" width="80%" alt="9"/><br />
 
-There should be window that pops up for a login. Use the admin previously created to login. Example below:
-
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/42dbb73b-9038-4ef6-a19b-8124bb2822eb)
-
-The VM will now restart after a short period.
+Success. The VM will now restart after a short period.
 
 <h2>Step 5: Setting up Remote Connection for Domain Users</h2>
 
