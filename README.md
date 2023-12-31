@@ -201,7 +201,8 @@ In the box at the bottom, type in "Domain Users" and Check Names. Next click OK.
 
 In the Domain Controller, open "Windows PowerShell ISE." Make sure to open it as Administrator. Click "New File" in the top left corner.
 
-![powershell ise new file](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/e11f1de8-276e-4664-827c-caf7cafec0b1)
+<img src="https://i.imgur.com/I3165Lu.png" height="40%" width="40%" alt="9"/><br />
+<img src="https://i.imgur.com/Y5BAh4S.png" height="50%" width="50%" alt="9"/><br />
 
 Next, copy and paste the script from this link into the text editor. 
 
@@ -211,20 +212,23 @@ Reccomendation: Before running it, change "NUMBER_OF_ACCOUNTS_TO_CREATE" from 10
 
 Now, click the Run button to run the script. Example below:
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/7cd52fba-92de-44af-933d-87b8aa7e5e0c)
+<img src="https://i.imgur.com/m6N6m4j.png" height="80%" width="80%" alt="9"/><br />
 
 This will start creating domain users with usernames and passwords (The Password for these users will be "Password1") 
 
+<img src="https://i.imgur.com/m6N6m4j.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/xCzIjyZ.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/IN8xvda.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/RMyC0Co.png" height="80%" width="80%" alt="9"/><br />
+
 Go to Server Manager>Tools>Active Directory Users and Computers. Under the "_EMPLOYEES" tab, look at all of the users created from the script.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/eec199e2-2e9e-436a-a210-d835cb232f1d)
+<img src="https://i.imgur.com/f2xPlao.png" height="80%" width="80%" alt="9"/><br />
 
 These names are all randomly generated. Choose one and log into the Client VM with the username it is assigned. (Remember the password is "Password1)
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/ef04a5bb-0f60-42e2-ae99-78ef7c229af8)
+<h1>MISSING IMAGE</h1>
 
 Congrats! You completed this tutorial!
 
-Click on this link for a tutorial on giving users files shares and permissions.
 
-https://github.com/jarrettm98/network-file-sharing-and-permissions-with-active-directory
