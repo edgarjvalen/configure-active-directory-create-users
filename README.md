@@ -164,10 +164,9 @@ Now click "Save" Next go back to the Client and click "Restart in the "Overview"
 
 <img src="https://i.imgur.com/Cq7d1PZ.png" height="80%" width="80%" alt="9"/><br />
 
-Once the Client is restarted, login to the client with Remote Desktop as the original admin created with the VM.
+Once the Client is restarted, login to the client with Remote Desktop as the admin account created.
 
-<img src="https://i.imgur.com/LkqUK6Q.png" height="80%" width="80%" alt="9"/><br />
-<h1>MISSING IMAGE</h1>
+<img src="https://i.imgur.com/LkqUK6Q.png" height="50%" width="50%" alt="9"/><br />
 
 Once logged in go to Settings>System>About and click on "Rename this PC(advanced)"
 
@@ -175,12 +174,12 @@ Once logged in go to Settings>System>About and click on "Rename this PC(advanced
 
 Now Click on "Change..."
 
-<img src="https://i.imgur.com/zKDbFIs.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/zKDbFIs.png" height="50%" width="50%" alt="9"/><br />
 
 Now check the bubble next to "Domain" then type in the domain name (Your own domain name). There should be window that pops up for a login. Use the admin previously created to login. Example below:
 
 <img src="https://i.imgur.com/nT3wd3q.png" height="80%" width="80%" alt="9"/><br />
-<img src="https://i.imgur.com/oVmTUG5.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/oVmTUG5.png" height="40%" width="40%" alt="9"/><br />
 
 Success. The VM will now restart after a short period.
 
