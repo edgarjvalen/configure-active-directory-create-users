@@ -66,6 +66,10 @@ Now, using the user and password created before, login to the Client with it's I
 
 Now, using Command Prompt, ping the Domain Controller with it's Private IP Address. Type in "ping (Your DC Private IP) -t" to perpetually ping. For now it will time out.
 
+```commandline
+ping 10.0.0.4 -t
+```
+
 <img src="https://i.imgur.com/1zyrIUN.png" height="80%" width="80%" alt="9"/><br />
 
 Next its time to enable ICMPv4. First, login to the Domain Controller VM then open "Windows Defender Firewall with Advanced Security" 
@@ -128,7 +132,7 @@ Name the OU "_ADMINS", then click OK. In the "_ADMINS" tab, create a new "User"
 
 Name this anything. Just remember the user and password. Uncheck the box that is next to "User must change password at next logon." This wont be necessary. Click next then click Finish.
 
-<img src="https://i.imgur.com/KeV6OS0.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/fmMKhNj.png" height="50%" width="50%" alt="9"/><br />
 <img src="https://i.imgur.com/S0c7T05.png" height="50%" width="50%" alt="9"/><br />
 
 Now add this user to the "Domain Admins" security group. Right-click on the user create, then click "Properties." Click on the "Members of" tab, then click "Add." 
@@ -137,13 +141,11 @@ Now add this user to the "Domain Admins" security group. Right-click on the user
 
 Type "domain" in the box under "Enter the object names to select:" then click "Check Names" 
 
-<h1>MISSING IMAGE</h1>
-
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/a0d8e4e1-30df-4ed4-8bde-15e08577f71c)
+<img src="https://i.imgur.com/WnHnpsK.png" height="80%" width="80%" alt="9"/><br />
 
 Choose the "Domain Admins" option then click OK
 
-<img src="https://i.imgur.com/eHOKSWT.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/eHOKSWT.png" height="50%" width="50%" alt="9"/><br />
 
 Now, click "Apply." The user has successfully been added to the Domain Admins security group. Click OK. Now logout of the Domain controller and re-log as the user just created.
 
@@ -207,15 +209,26 @@ Next, copy and paste the script from this link into the text editor.
 
 https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1
 
-Reccomendation: Before running it, change "NUMBER_OF_ACCOUNTS_TO_CREATE" from 10000 to 100.
-
-Now, click the Run button to run the script. Example below:
+Choose "1_CREATE_USERS.ps1".
 
 <img src="https://i.imgur.com/m6N6m4j.png" height="80%" width="80%" alt="9"/><br />
 
-This will start creating domain users with usernames and passwords (The Password for these users will be "Password1") 
+Run "Set-ExecutionPolicy Unrestricted" in the command line.
+
+```commandline
+Set-ExecutionPolicy Unrestricted
+```
 
 <img src="https://i.imgur.com/xCzIjyZ.png" height="65%" width="65%" alt="9"/><br />
+
+Change directory to script.
+
+```commandline
+cd C:\Users\tsmith\Desktop\1_CREATE_USERS.psy
+```
+
+Now, click the Run button to run the script. This will start creating domain users with usernames and passwords (The Password for these users will be "Password1") Example below:
+
 <img src="https://i.imgur.com/IN8xvda.png" height="65%" width="65%" alt="9"/><br />
 <img src="https://i.imgur.com/RMyC0Co.png" height="80%" width="80%" alt="9"/><br />
 
@@ -227,6 +240,10 @@ These names are all randomly generated. Choose one and log into the Client VM wi
 
 <img src="https://i.imgur.com/LoWC3Er.png" height="50%" width="50%" alt="9"/><br />
 
-Congrats! You completed this tutorial!
+Congrats! You completed this tutorial.
+
+<h2>Conclusion</h2>
+
+Active Directory is crucial for organizations to effectively control their network traffic and prevent unauthorized access to internal networks or leakage of information to external parties. Understanding and learning about Active Directory is a fundamental principle for all IT professionals, regardless of their specific roles. Hope you found this blog both informative and valuable.
 
 
