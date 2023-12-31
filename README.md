@@ -40,7 +40,7 @@ Now for the image use Windows Server 2022. It is recommended for the size to use
 
 Give the admin log in credentials that can be remembered or just write them down in notepad. Now, click "Next" until reaching the "Networking" tab. Take note of the "Virtual Network" created. This will be important when creating the Client VM. Check the box under Licensing then "Review and create" the VM.
 
-<img src="https://i.imgur.com/NxXFK16.png" height="60%" width="60%" alt="9"/><br />
+<img src="https://i.imgur.com/NxXFK16.png" height="70%" width="70%" alt="9"/><br />
 
 Now, create the Client VM. Same thing as the first one except the image should be using Windows 10.
 
@@ -50,21 +50,23 @@ Click, Next until reaching the Networking tab. Make sure the Virtual Network is 
 
 Now it's time to set the Domain Controller's NIC Private IP to static. Go to the Domain Controller and click on the "Networking" tab. Next, click on the "Network Interface."
 
-<img src="https://i.imgur.com/6W2WZTA.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/6W2WZTA.png" height="60%" width="60%" alt="9"/><br />
 
 Now, go the "IP configurations" tab and click on the IP configuration. 
 
-<img src="https://i.imgur.com/0R53K7r.png" height="40%" width="40%" alt="9"/><br />
+<img src="https://i.imgur.com/0R53K7r.png" height="60%" width="60%" alt="9"/><br />
 
 Now, change the Allocation from "Dynamic" to "Static." Then click Save.
 
-<img src="https://i.imgur.com/JAGBZtk.png" height="40%" width="40%" alt="9"/><br />
+<img src="https://i.imgur.com/JAGBZtk.png" height="60%" width="60%" alt="9"/><br />
 
 Now, using the user and password created before, login to the Client with it's IP address in Remote Desktop Connection. 
 
-<img src="https://i.imgur.com/28TrmKg.png" height="45%" width="45%" alt="9"/><br />
+<img src="https://i.imgur.com/28TrmKg.png" height="55%" width="55%" alt="9"/><br />
 
 Now, using Command Prompt, ping the Domain Controller with it's Private IP Address. Type in "ping (Your DC Private IP) -t" to perpetually ping. For now it will time out.
+
+<h1>MISSING IMAGE</h1>
 
 ![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/5acef08a-c31f-4261-9f9a-218c28777b35)
 
@@ -78,7 +80,9 @@ Click on "Inbound Rules" and Sort by "Protocol". Look for the rules with "Core N
 
 Right-click and Enable both rules. Now go back to the Client VM and check on the command prompt. It should now be properly pinging the Domain Controller.
 
-<img src="https://i.imgur.com/ENb2KyF.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/ENb2KyF.png" height="65%" width="65%" alt="9"/><br />
+
+<h1>MISSING IMAGE</h1>
 
 ![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/ccd209de-9c2a-4eeb-a5d8-0b2addd974e2)
 
@@ -111,11 +115,13 @@ Next, the NETBIOS domain will be made. This may take a moment. Once it is made, 
 
 After Installing the VM will reboot. Once it is rebooted, Log back into the Domain Controller with the domain name and the username. Example below.
 
-<img src="https://i.imgur.com/nT5uFiT.png" height="40%" width="40%" alt="9"/><br />
+<img src="https://i.imgur.com/nT5uFiT.png" height="55%" width="55%" alt="9"/><br />
 
 <h2>Step 3: Creating a Domain Admin</h2>
 
 Once logged in, using Server Manager click on tools in the top-right corner. Next click on "Active Directory Users and Computers."
+
+<h1>MISSING IMAGE</h1>
 
 ![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/8fe68c25-2b8d-44de-9ebe-4fbc4ff1df84)
 
@@ -126,6 +132,8 @@ In the Domain container, create a new "Organizational Unit"
 Name the OU "_EMPLOYEES", then click OK. Next create another OU and name it "_ADMINS."
 
 In the "_EMPLOYEES" tab, create a new "User"
+
+<h1>MISSING IMAGE</h1>
 
 ![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/eb70e5e0-0729-4ba7-af6e-a20de74b1e85)
 
@@ -140,6 +148,8 @@ Now add this user to the "Domain Admins" security group. Right-click on the user
 <img src="https://i.imgur.com/3MooGCr.png" height="50%" width="50%" alt="9"/><br />
 
 Type "domain" in the box under "Enter the object names to select:" then click "Check Names" 
+
+<h1>MISSING IMAGE</h1>
 
 ![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/a0d8e4e1-30df-4ed4-8bde-15e08577f71c)
 
@@ -188,7 +198,7 @@ Success. The VM will now restart after a short period.
 
 Now, log into the Domain Controller. Go back to Server Manager>Tools>Active Directory Users and Computers. Under the Domain container, go to the "Computers" tab. It should show that the client has been added to the list.
 
-<img src="https://i.imgur.com/TT1JXxR.png" height="60%" width="60%" alt="9"/><br />
+<img src="https://i.imgur.com/TT1JXxR.png" height="80%" width="80%" alt="9"/><br />
 
 Now, log into the Client as the admin user created and go to System Settings>Remote Desktop. Click on "Select users that can remotely access this PC" Next click Add.
 
@@ -196,13 +206,13 @@ Now, log into the Client as the admin user created and go to System Settings>Rem
 
 In the box at the bottom, type in "Domain Users" and Check Names. Next click OK.
 
-<img src="https://i.imgur.com/JXijlI7.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/JXijlI7.png" height="60%" width="60%" alt="9"/><br />
 
 <h2>Step 6: Creating Domain Users</h2>
 
 In the Domain Controller, open "Windows PowerShell ISE." Make sure to open it as Administrator. Click "New File" in the top left corner.
 
-<img src="https://i.imgur.com/I3165Lu.png" height="60%" width="60%" alt="9"/><br />
+<img src="https://i.imgur.com/I3165Lu.png" height="85%" width="85%" alt="9"/><br />
 <img src="https://i.imgur.com/Y5BAh4S.png" height="80%" width="80%" alt="9"/><br />
 
 Next, copy and paste the script from this link into the text editor. 
