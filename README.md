@@ -78,7 +78,7 @@ Click on "Inbound Rules" and Sort by "Protocol". Look for the rules with "Core N
 
 Right-click and Enable both rules. Now go back to the Client VM and check on the command prompt. It should now be properly pinging the Domain Controller.
 
-<img src="https://i.imgur.com/ENb2KyF.png" height="65%" width="65%" alt="9"/><br />
+<img src="https://i.imgur.com/ENb2KyF.png" height="55%" width="55%" alt="9"/><br />
 
 <img src="https://i.imgur.com/2YNRrzi.png" height="80%" width="80%" alt="9"/><br />
 
