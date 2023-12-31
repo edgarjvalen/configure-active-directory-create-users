@@ -201,8 +201,8 @@ In the box at the bottom, type in "Domain Users" and Check Names. Next click OK.
 
 In the Domain Controller, open "Windows PowerShell ISE." Make sure to open it as Administrator. Click "New File" in the top left corner.
 
-<img src="https://i.imgur.com/I3165Lu.png" height="40%" width="40%" alt="9"/><br />
-<img src="https://i.imgur.com/Y5BAh4S.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/I3165Lu.png" height="60%" width="60%" alt="9"/><br />
+<img src="https://i.imgur.com/Y5BAh4S.png" height="80%" width="80%" alt="9"/><br />
 
 Next, copy and paste the script from this link into the text editor. 
 
@@ -216,9 +216,8 @@ Now, click the Run button to run the script. Example below:
 
 This will start creating domain users with usernames and passwords (The Password for these users will be "Password1") 
 
-<img src="https://i.imgur.com/m6N6m4j.png" height="80%" width="80%" alt="9"/><br />
-<img src="https://i.imgur.com/xCzIjyZ.png" height="80%" width="80%" alt="9"/><br />
-<img src="https://i.imgur.com/IN8xvda.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/xCzIjyZ.png" height="65%" width="65%" alt="9"/><br />
+<img src="https://i.imgur.com/IN8xvda.png" height="65%" width="65%" alt="9"/><br />
 <img src="https://i.imgur.com/RMyC0Co.png" height="80%" width="80%" alt="9"/><br />
 
 Go to Server Manager>Tools>Active Directory Users and Computers. Under the "_EMPLOYEES" tab, look at all of the users created from the script.
