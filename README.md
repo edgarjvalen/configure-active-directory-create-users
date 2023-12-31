@@ -187,15 +187,15 @@ Success. The VM will now restart after a short period.
 
 Now, log into the Domain Controller. Go back to Server Manager>Tools>Active Directory Users and Computers. Under the Domain container, go to the "Computers" tab. It should show that the client has been added to the list.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/ffaaa5bd-4f80-4f5a-a664-6ac578783ccc)
+<img src="https://i.imgur.com/TT1JXxR.png" height="60%" width="60%" alt="9"/><br />
 
 Now, log into the Client as the admin user created and go to System Settings>Remote Desktop. Click on "Select users that can remotely access this PC" Next click Add.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/6e69f3bb-be67-42b2-aea0-47ed4ee39822)
+<img src="https://i.imgur.com/oKxoprK.png" height="80%" width="80%" alt="9"/><br />
 
 In the box at the bottom, type in "Domain Users" and Check Names. Next click OK.
 
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/61d6da6a-b8e0-4c45-953f-aad9ae0b582b)
+<img src="https://i.imgur.com/JXijlI7.png" height="50%" width="50%" alt="9"/><br />
 
 <h2>Step 6: Creating Domain Users</h2>
 
