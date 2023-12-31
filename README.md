@@ -8,7 +8,6 @@
 In this lab, we'll create two VMs in the same VNET—one as a Domain Controller (DC) with a static IP offering Active Directory services, and the other as a Client machine. The client will join the domain, and its DNS settings will be configured to use the DC as the primary DNS server. The project involves establishing an Active Directory system for centralized user credential oversight and network traffic management. By routing all internet traffic through the main server (Active Directory) via organization devices (Clients), administrators can monitor network activity and detect suspicious logs. Additionally, the project includes a PowerShell script to generate 1,000 users and showcases a device within the organization's domain, ensuring efficient management of user credentials and network traffic.
 <br />
 
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -20,7 +19,6 @@ In this lab, we'll create two VMs in the same VNET—one as a Domain Controller 
 
 - Windows Server 2022
 - Windows 10 (21H2)
-
 
 <h2>Project Diagram</h2>
 
