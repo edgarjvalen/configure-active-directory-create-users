@@ -66,9 +66,7 @@ Now, using the user and password created before, login to the Client with it's I
 
 Now, using Command Prompt, ping the Domain Controller with it's Private IP Address. Type in "ping (Your DC Private IP) -t" to perpetually ping. For now it will time out.
 
-<h1>MISSING IMAGE</h1>
-
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/5acef08a-c31f-4261-9f9a-218c28777b35)
+<img src="https://i.imgur.com/1zyrIUN.png" height="80%" width="80%" alt="9"/><br />
 
 Next its time to enable ICMPv4. First, login to the Domain Controller VM then open "Windows Defender Firewall with Advanced Security" 
 
@@ -76,16 +74,13 @@ Next its time to enable ICMPv4. First, login to the Domain Controller VM then op
 
 Click on "Inbound Rules" and Sort by "Protocol". Look for the rules with "Core Networking Diagnostics - ICMP Echo Request(ICMPv4-In)" There will be two of them (Both on the bottom of the image below)
 
-<img src="https://i.imgur.com/dmGfcyH.png" height="85%" width="85%" alt="9"/><br />
+<img src="https://i.imgur.com/EydkpVV.png" height="80%" width="80%" alt="9"/><br />
 
 Right-click and Enable both rules. Now go back to the Client VM and check on the command prompt. It should now be properly pinging the Domain Controller.
 
 <img src="https://i.imgur.com/ENb2KyF.png" height="65%" width="65%" alt="9"/><br />
 
-<h1>MISSING IMAGE</h1>
-
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/ccd209de-9c2a-4eeb-a5d8-0b2addd974e2)
-
+<img src="https://i.imgur.com/2YNRrzi.png" height="80%" width="80%" alt="9"/><br />
 
 <h2>Step 2: Installing Active Directory</h2>
 
@@ -121,27 +116,20 @@ After Installing the VM will reboot. Once it is rebooted, Log back into the Doma
 
 Once logged in, using Server Manager click on tools in the top-right corner. Next click on "Active Directory Users and Computers."
 
-<h1>MISSING IMAGE</h1>
-
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/8fe68c25-2b8d-44de-9ebe-4fbc4ff1df84)
+<img src="https://i.imgur.com/grdGvPg.png" height="80%" width="80%" alt="9"/><br />
 
 In the Domain container, create a new "Organizational Unit"
 
 <img src="https://i.imgur.com/9DGmBMS.png" height="80%" width="80%" alt="9"/><br />
 
-Name the OU "_EMPLOYEES", then click OK. Next create another OU and name it "_ADMINS."
+Name the OU "_ADMINS", then click OK. In the "_ADMINS" tab, create a new "User"
 
-In the "_EMPLOYEES" tab, create a new "User"
-
-<h1>MISSING IMAGE</h1>
-
-![image](https://github.com/jarrettm98/install-active-directory-create-users/assets/140662793/eb70e5e0-0729-4ba7-af6e-a20de74b1e85)
+<img src="https://i.imgur.com/gUev6rr.png" height="80%" width="80%" alt="9"/><br />
 
 Name this anything. Just remember the user and password. Uncheck the box that is next to "User must change password at next logon." This wont be necessary. Click next then click Finish.
 
-<img src="https://i.imgur.com/VIJLhXf.png" height="50%" width="50%" alt="9"/><br />
-<img src="https://i.imgur.com/slz2BBb.png" height="50%" width="50%" alt="9"/><br />
-
+<img src="https://i.imgur.com/KeV6OS0.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/S0c7T05.png" height="50%" width="50%" alt="9"/><br />
 
 Now add this user to the "Domain Admins" security group. Right-click on the user create, then click "Properties." Click on the "Members of" tab, then click "Add." 
 
@@ -237,7 +225,7 @@ Go to Server Manager>Tools>Active Directory Users and Computers. Under the "_EMP
 
 These names are all randomly generated. Choose one and log into the Client VM with the username it is assigned. (Remember the password is "Password1)
 
-<h1>MISSING IMAGE</h1>
+<img src="https://i.imgur.com/LoWC3Er.png" height="60%" width="60%" alt="9"/><br />
 
 Congrats! You completed this tutorial!
 
