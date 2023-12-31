@@ -118,7 +118,7 @@ After Installing the VM will reboot. Once it is rebooted, Log back into the Doma
 
 Once logged in, using Server Manager click on tools in the top-right corner. Next click on "Active Directory Users and Computers."
 
-<img src="https://i.imgur.com/grdGvPg.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/grdGvPg.png" height="70%" width="70%" alt="9"/><br />
 
 In the Domain container, create a new "Organizational Unit"
 
@@ -139,11 +139,11 @@ Now add this user to the "Domain Admins" security group. Right-click on the user
 
 Type "domain" in the box under "Enter the object names to select:" then click "Check Names" 
 
-<img src="https://i.imgur.com/WnHnpsK.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/WnHnpsK.png" height="60%" width="60%" alt="9"/><br />
 
 Choose the "Domain Admins" option then click OK
 
-<img src="https://i.imgur.com/eHOKSWT.png" height="50%" width="50%" alt="9"/><br />
+<img src="https://i.imgur.com/eHOKSWT.png" height="80%" width="80%" alt="9"/><br />
 
 Now, click "Apply." The user has successfully been added to the Domain Admins security group. Click OK. Now logout of the Domain controller and re-log as the user just created.
 
