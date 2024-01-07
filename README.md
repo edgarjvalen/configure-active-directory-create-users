@@ -23,7 +23,7 @@ In this lab, we'll create two VMs in the same VNET—one as a Domain Controller 
 <h2>Project Diagram</h2>
 
 <p align="center">
-<img src="https://i.imgur.com/BcRNcBi.png" height="80%" width="80%" alt="9"/><br />
+<img src="https://i.imgur.com/BcRNcBi.png" height="50%" width="50%" alt="9"/><br />
 </p>
 
 <h2>Step 1: Setup</h2>
